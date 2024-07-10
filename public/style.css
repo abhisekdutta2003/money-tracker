@@ -1,0 +1,215 @@
+
+body {
+    background: url('https://wallup.net/wp-content/uploads/2015/12/168036-money-coins-movies-landscape-water.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', Helvetica, sans-serif;
+    margin: 0;
+    color: #333;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0fce45;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    font-size: 18px;
+}
+
+.input-section label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+.input-section input,
+.input-section select {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: rgb(187, 17, 73);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+}
+
+.input-section button:hover {
+    background-color: rgb(150, 13, 58);
+    transform: scale(1.05);
+}
+
+.input-section button:active {
+    animation: glowAndSpin 0.5s;
+}
+
+
+.expenses-list {
+    margin: 20px;
+    animation: fadeIn 1s ease-in-out;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+th {
+    background-color: rgb(167, 141, 16);
+    color: rgb(253, 253, 250);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    background-color: rgba(248, 26, 200, 0.1);
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: rgb(237, 16, 16);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: rgb(200, 13, 13);
+    transform: scale(1.05);
+}
+
+.delete-btn:active {
+    animation: glowAndSpin 0.5s;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s;
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+    animation: popup 0.5s;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+}
+
+
+body, button, input, select {
+    cursor: url('https://example.com/custom-cursor.png'), auto;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes glowAndSpin {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        transform: rotate(0deg);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+        transform: rotate(180deg);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+
+
